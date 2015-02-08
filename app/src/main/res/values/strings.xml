@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="presidents_array">
+        <item>复旦大学</item>
+        <item>上海交通大学</item>
+        <item>同济大学</item>
+        <item>上海财经大学</item>
+        <item>上海外国语大学</item>
+        <item>华东政法大学</item>
+        <item>华东理工大学</item>
+        <item>上海大学</item>
+        <item>上海第二工业大学</item>
+        <item>上海海事大学</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>
