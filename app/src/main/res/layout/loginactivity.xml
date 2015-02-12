@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_x="1dp"
         android:layout_y="413dp"
-        android:text="改密"
+        android:text="忘记密码"
         android:onClick="onClickthree"/>
 
     <Button

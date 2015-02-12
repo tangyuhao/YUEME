@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".BasicViews6Activity"
+            android:name=".LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,10 +48,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:label="Login Activity"
-            android:name=".LoginActivity" >
+            android:label="BasicViews6Activity"
+            android:name=".BasicViews6Activity" >
             <intent-filter >
-                <action android:name="net.learn2develop.LoginActivity" />
+                <action android:name="net.learn2develop.BasicViews6Activity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
