@@ -32,6 +32,6 @@ public class MainLogin extends Activity {
 
     public void onClickthree(View view)
     {
-        startActivity(new Intent(this,Register1.class));
+        startActivity(new Intent(this,Register2.class));
     }
 }

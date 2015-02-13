@@ -51,7 +51,7 @@ public class Register2 extends Activity {
 //    上一步
     public void onClickone(View view)
     {
-        startActivity(new Intent(this,Register1.class));
+        startActivity(new Intent(this,MainLogin.class));
     }
 
 //    下一步

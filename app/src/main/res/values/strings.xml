@@ -20,12 +20,12 @@
     <string-array name="school_array">
         <item>复旦大学</item>
         <item>同济大学</item>
-        <item>上海财经大学</item>
+        <item>上海交通大学</item>
     </string-array>
     <string-array name="school_mail">
         <item>\@fudan.edu.cn</item>
         <item>\@tongji.edu.cn</item>
-        <item>\@caida.edu.cn</item>
+        <item>\@sjtu.edu.cn</item>
     </string-array>
 
     <!-- Register5 -->
