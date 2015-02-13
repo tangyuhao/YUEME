@@ -9,18 +9,26 @@ import android.widget.RadioButton;
 
 public class Register3 extends Activity {
 
-    String gender = "Male";
+    static String gender = "Male";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register3);
+
+        if(gender.equals("Male")) {
+            RadioButton radio = (RadioButton) findViewById(R.id.btnMan);
+            radio.setChecked(true);
+        }
+        else {
+            RadioButton radio1 = (RadioButton) findViewById(R.id.btnWoman);
+            radio1.setChecked(true);
+        }
 
     }
 
     public void onRadioButtonClicked(View view)
     {
         boolean checked =((RadioButton) view).isChecked();
-
         switch (view.getId())
         {
             case R.id.btnMan:

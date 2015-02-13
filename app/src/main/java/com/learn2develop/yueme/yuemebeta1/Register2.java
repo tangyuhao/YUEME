@@ -14,30 +14,30 @@ public class Register2 extends Activity {
     private Spinner schoolSpinner = null;// 学校选择
     ArrayAdapter<String> schoolAdapter = null; //学校选择适配器
     private String[] schools = null;//存放学校内容的数组
-
     String mail_suffix = null;
+    static int posi = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register2);
         schools = getResources().getStringArray(R.array.school_array);
         //下拉框函数
+        schoolSpinner = (Spinner)findViewById(R.id.spin_school);
+        schoolAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, schools);
+        schoolSpinner.setAdapter(schoolAdapter);
+        schoolSpinner.setSelection(posi,true);
         setSpinner();
     }
 
 //    设置下拉框
     private void setSpinner()
     {
-        schoolSpinner = (Spinner)findViewById(R.id.spin_school);
-        schoolAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, schools);
-        schoolSpinner.setAdapter(schoolAdapter);
-        schoolSpinner.setSelection(0,true);
-
         schoolSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 mail_suffix = getResources().getStringArray(R.array.school_mail)[position];
+                posi = position;
             }
 
             @Override
