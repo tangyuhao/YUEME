@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Login</string>
+    <string name="app_name">YueMebeta1</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string-array name="presidents_array">
+    <string name="title_activity_register1">Register1</string>
+    <string name="title_activity_register2">Register2</string>
+    <string name="title_activity_register3">Register3</string>
+    <string name="title_activity_register4">Register4</string>
+    <string name="title_activity_register5">Register5</string>
+    <string name="title_activity_mainisland">Mainisland</string>
+
+    <!-- ／MainLogin -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <!-- Register2 -->
+    <string-array name="school_array">
         <item>复旦大学</item>
-        <item>上海交通大学</item>
         <item>同济大学</item>
         <item>上海财经大学</item>
-        <item>上海外国语大学</item>
-        <item>华东政法大学</item>
-        <item>华东理工大学</item>
-        <item>上海大学</item>
-        <item>上海第二工业大学</item>
-        <item>上海海事大学</item>
-        <item>其他</item>
     </string-array>
+    <string-array name="school_mail">
+        <item>\@fudan.edu.cn</item>
+        <item>\@tongji.edu.cn</item>
+        <item>\@caida.edu.cn</item>
+    </string-array>
+
+    <!-- Register5 -->
+    <string name="note1">我们将发送一封验证邮件到您的学号邮箱，邮箱验证成功方能使用</string>
+    <string name="title_activity_register6">Register6</string>
+
 
 </resources>

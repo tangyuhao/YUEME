@@ -1,60 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="login.learn2develop.net.login" >
+    package="com.learn2develop.yueme.yuemebeta1" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".BasicViews6Activity"
+            android:name=".MainLogin"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:label="Name Activity"
-            android:name=".NameActivity" >
-            <intent-filter >
-                <action android:name="net.learn2develop.NameActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:name=".Register2"
+            android:label="@string/title_activity_register1" >
         </activity>
         <activity
-            android:label="Number Activity"
-            android:name=".NumberActivity" >
-            <intent-filter >
-                <action android:name="net.learn2develop.NumberActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:name=".Register3"
+            android:label="@string/title_activity_register2" >
         </activity>
         <activity
-            android:label="PassWord Activity"
-            android:name=".PasswordActivity" >
-            <intent-filter >
-                <action android:name="net.learn2develop.PasswordActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:name=".Register4"
+            android:label="@string/title_activity_register3" >
         </activity>
         <activity
-            android:label="Login Activity"
-            android:name=".LoginActivity" >
-            <intent-filter >
-                <action android:name="net.learn2develop.LoginActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:name=".Register5"
+            android:label="@string/title_activity_register4" >
         </activity>
         <activity
-            android:label="Change Activity"
-            android:name=".ChangeActivity" >
-            <intent-filter >
-                <action android:name="net.learn2develop.ChangeActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:name=".Register1"
+            android:label="@string/title_activity_register5" >
+        </activity>
+        <activity
+            android:name=".Mainisland"
+            android:label="@string/title_activity_mainisland" >
         </activity>
     </application>
 
