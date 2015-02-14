@@ -4,13 +4,26 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.avos.avoscloud.AVCloudQueryResult;
+import com.avos.avoscloud.AVException;
+import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVQuery;
+import com.avos.avoscloud.AVUser;
+import com.avos.avoscloud.CloudQueryCallback;
+import com.avos.avoscloud.CountCallback;
+import com.avos.avoscloud.FindCallback;
+
+import java.lang.Object;
+import java.util.List;
+
 
 public class Register3 extends Activity {
-
+    int num;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,9 +82,38 @@ public class Register3 extends Activity {
                     .setPositiveButton("Ok", null)
                     .show();
         }
-        //在此可以添加对昵称设定的一些条件
-        else {
-            startActivity(new Intent(this, Register4.class));
+        else
+        {
+            AVQuery<AVUser> query = AVUser.getQuery();
+
+            query.whereEqualTo("username",MainLogin.nickname);
+            query.findInBackground(new FindCallback<AVUser>() {
+                public void done(List<AVUser> objects, AVException e) {
+                    if (e == null) {
+                        Log.i("Test", "共查询到用户  " + objects.size() + "  个");
+                        // 查询成功
+
+                        if(objects.size() == 0)
+                        {
+                            startActivity(new Intent(com.learn2develop.yueme.yuemebeta1.Register3.this, Register4.class));
+                        }
+                        else
+                        {
+                            new AlertDialog.Builder(com.learn2develop.yueme.yuemebeta1.Register3.this)
+                                    .setMessage("Sorry, your nickname has been used.")
+                                    .setPositiveButton("Ok", null)
+                                    .show();
+                            TextView v1 = (TextView) findViewById(R.id.editText);
+                            v1.setText("");
+                        }
+                    } else {
+                        Log.i("Test", "查询出错");
+                        // 查询出错
+                    }
+                }
+            });
+
+
         }
     }
 }
