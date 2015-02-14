@@ -13,9 +13,7 @@ public class Register5 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register5);
-
         TextView v = (TextView)findViewById(R.id.editText1);
-        student_id = v.getText().toString();
         if(student_id != null){
             v.setText(student_id);
         }
@@ -23,6 +21,8 @@ public class Register5 extends Activity {
 
     public void onClickone(View view)
     {
+        TextView v = (TextView)findViewById(R.id.editText1);
+        student_id = v.getText().toString();
         startActivity(new Intent(this,Register4.class));
     }
 
