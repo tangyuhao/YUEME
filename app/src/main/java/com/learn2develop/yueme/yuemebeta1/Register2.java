@@ -15,7 +15,6 @@ public class Register2 extends Activity {
     ArrayAdapter<String> schoolAdapter = null; //学校选择适配器
     private String[] schools = null;//存放学校内容的数组
     String mail_suffix = null;
-    static int posi = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +25,10 @@ public class Register2 extends Activity {
         schoolAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, schools);
         schoolSpinner.setAdapter(schoolAdapter);
-        schoolSpinner.setSelection(posi,true);
+        schoolSpinner.setSelection(MainLogin.posi,true);
         setSpinner();
+
+
     }
 
 //    设置下拉框
@@ -37,7 +38,7 @@ public class Register2 extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 mail_suffix = getResources().getStringArray(R.array.school_mail)[position];
-                posi = position;
+                MainLogin.posi = position;
             }
 
             @Override

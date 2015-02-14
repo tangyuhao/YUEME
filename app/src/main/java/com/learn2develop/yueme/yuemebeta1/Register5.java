@@ -6,23 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.avos.avoscloud.AVUser;
+
 
 public class Register5 extends Activity {
-    static String student_id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register5);
         TextView v = (TextView)findViewById(R.id.editText1);
-        if(student_id != null){
-            v.setText(student_id);
+        if(MainLogin.student_id != null){
+            v.setText(MainLogin.student_id);
         }
     }
 
     public void onClickone(View view)
     {
         TextView v = (TextView)findViewById(R.id.editText1);
-        student_id = v.getText().toString();
+        MainLogin.student_id = v.getText().toString();
         startActivity(new Intent(this,Register4.class));
     }
 
