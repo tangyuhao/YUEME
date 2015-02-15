@@ -29,8 +29,9 @@
     </string-array>
 
     <!-- Register5 -->
-    <string name="note1">我们将发送一封验证邮件到您的学号邮箱，邮箱验证成功方能使用</string>
+    <string name="note1">我们将发送一封验证邮件到您的学号邮箱，验证完成就能使用。
+    如果发现自己到邮箱被别人注册，请联系我们到工作人员</string>
     <string name="title_activity_register6">Register6</string>
-
+    <string name="title_activity_register_successful">Register_successful</string>
 
 </resources>

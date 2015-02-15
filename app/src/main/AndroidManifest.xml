@@ -46,6 +46,10 @@
             android:name=".Mainisland"
             android:label="@string/title_activity_mainisland" >
         </activity>
+        <activity
+            android:name=".Register_successful"
+            android:label="@string/title_activity_register_successful" >
+        </activity>
     </application>
 
 </manifest>

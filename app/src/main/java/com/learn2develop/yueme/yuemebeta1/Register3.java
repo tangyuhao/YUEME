@@ -113,7 +113,6 @@ public class Register3 extends Activity {
                 }
             });
 
-
         }
     }
 }

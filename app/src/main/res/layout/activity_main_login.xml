@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="学号邮箱"
+            android:text="昵称"
             android:id="@+id/textView1"
             android:layout_weight="0.04"
             android:layout_gravity="center_horizontal" />
@@ -29,10 +29,10 @@
         <EditText
             android:layout_width="284dp"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/editText1"
-            android:layout_weight="0.04" />
+            android:layout_weight="0.04"
+            android:inputType="text" />
 
     </LinearLayout>
 
